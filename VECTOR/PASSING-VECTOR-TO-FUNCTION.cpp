@@ -11,6 +11,10 @@ void function(vector<int>&n) // this is PASS BY REFERENCE method.....
     cout<<"The size of the vector is:"<<n.size()<<endl;
 
 }
+// void news(int arr[],int size)
+// {
+//     vector<int>neon;
+// }
 int main()
 {
     vector<int>number;
