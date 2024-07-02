@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     //arr[8]={2,6,2,8,4,3,9,7}; tell me what is the 
-    cout<<"Enter the size of array"<<endl;
+    cout<<"Enter the size of array(Max number <= 100)"<<endl;
     int n;
     cin>>n;
     int arr[n];
@@ -12,7 +12,7 @@ int main()
         cin>>arr[i];
     }
     //Prerequisites...
-    int hash[100]={0};
+    int hash[100000]={0};
     //Hasing.....
     for(int i=0;i<n;i++)
     {
