@@ -46,5 +46,6 @@ int main()
     int count=Removeduplicates(v);
     //Print the size of Removed duplicate array...
     cout<<"Unique numbers in the array is:"<<count<<endl;
+    cout<<*(v.end()-1)<<endl;
     return 0;
 }

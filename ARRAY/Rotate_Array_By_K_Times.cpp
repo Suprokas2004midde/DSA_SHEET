@@ -10,11 +10,11 @@ int main()
     for(int i=1;i<=k;i++)
     {
         temp=arr[0];
-        for(int j=0;j<6;j++)
+        for(int j=0;j<6-1;j++)
         {
-            if(j==5) arr[5]=temp;
             arr[j]=arr[j+1];
         }
+        arr[5]=temp;
     }
     for(int i=0;i<6;i++)
     {
