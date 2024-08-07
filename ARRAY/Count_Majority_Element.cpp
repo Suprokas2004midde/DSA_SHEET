@@ -35,6 +35,7 @@ int majority(vector<int>& nums)
 int main()
 {
     vector<int>v={2,2,3,3,1,1,1,2,1};
+    cout<<findmax(v)
     int x= majority(v);
     cout<<x<<endl;
     return 0;
