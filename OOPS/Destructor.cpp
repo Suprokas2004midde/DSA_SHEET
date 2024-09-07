@@ -12,18 +12,11 @@ class student {
         cgpaptr= new float;
         *cgpaptr=cgpa;
     }
-
-    //Custom Constructor(for copy)...
-    student(student& orgobj) //this create an extra-poiner in heap to store the value of original data to the anothe new address.... 
-    {
-        this->name=orgobj.name;
-        cgpaptr=new float;
-        *cgpaptr = *orgobj.cgpaptr;
-    }
     //destrutor
     ~student()
     {
         cout<<"Hi, i am destructor"<<endl;
+        delete cgpaptr; //to avoid memory leak we use this delete function to clean the taken space.....
     }
     //get details...
     void getinfo(){
@@ -33,6 +26,7 @@ class student {
 };
 int main()
 { 
-    student s1("Suprokas",276001);
+    student s1("Suprokas",8.65);
+    s1.getinfo();//after this line the c++ compuler automatically calls the destructor......
     return 0;
 }
