@@ -85,7 +85,7 @@ int main()
     PrintLL(head);
     head=Removenode(head,k);
     PrintLL(head);
-    k=6;
+    k=9;
     head=RemoveEL(head,k);
     PrintLL(head);
     return 0;
