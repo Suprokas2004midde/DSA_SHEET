@@ -28,5 +28,6 @@ int main()
 { 
     student s1("Suprokas",8.65);
     s1.getinfo();//after this line the c++ compuler automatically calls the destructor......
+    cout<<"Hi,I am the last"<<endl;
     return 0;
 }
